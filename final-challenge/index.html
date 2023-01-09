@@ -8,22 +8,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container row">
         <button class="nav-toggle" aria-label="open navigation">
           <span class="hamburger"></span>
         </button>
+        <!-- logo -->
         <a class="logo" href="#">
-          <img src="./logo.svg" alt="conquering responsive layouts" />
+          <img src="./logo.svg" alt="logo" />
         </a>
+        <!-- nav -->
         <nav class="nav">
+          <!-- nav left -->
           <ul class="nav__list nav__list--primary">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
           </ul>
+          <!-- nav right -->
           <ul class="nav__list nav__list--secondary">
-            <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Sign In</a>
+            </li>
             <li class="nav__item">
               <a href="#" class="nav__link nav__link--button">Sign up</a>
             </li>
@@ -35,131 +47,170 @@
     <main class="main">
       <section class="hero">
         <div class="container row">
-          <h1>Responsive layouts don’t have to be a struggle</h1>
-          <div class="">
+          <h1 class="col">
+            Responsive layouts
+            <span class="accent">don't have to be a struggle</span>
+          </h1>
+          <div class="col">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur
+              eos molestiae, tempora consequatur asperiores repellat aliquid
+              magnam in maiores sint libero aperiam culpa maxime officiis quasi
+              voluptatem quidem autem expedita!
             </p>
-            <a href="#" class="btn">I want to learn</a>
+            <a href="#" class="nav__link nav__link--button">i want to learn</a>
           </div>
         </div>
       </section>
 
-      <section class="three-col">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Cheap</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
-            <div class="col">
-              <h2>Quick</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
-            <div class="col">
-              <h2>Affordable</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-            </div>
+      <section class="cards">
+        <div class="container row">
+          <div class="col">
+            <h3 class="accent">Mobile-first</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              adipisci, ipsa quisquam repellat minus voluptatum quibusdam
+              necessitatibus praesentium, rem quae obcaecati corrupti dicta
+              nostrum tenetur cum deserunt, voluptas delectus molestiae.
+            </p>
+          </div>
+          <div class="col">
+            <h3 class="accent">Efficient</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              adipisci, ipsa quisquam repellat minus voluptatum quibusdam
+              necessitatibus praesentium, rem quae obcaecati corrupti dicta
+              nostrum tenetur cum deserunt, voluptas delectus molestiae.
+            </p>
+          </div>
+          <div class="col">
+            <h3 class="accent">Done right</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              adipisci, ipsa quisquam repellat minus voluptatum quibusdam
+              necessitatibus praesentium, rem quae obcaecati corrupti dicta
+              nostrum tenetur cum deserunt, voluptas delectus molestiae.
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="container row">
-        <section class="primary-content">
-          <h2 class="section-title">
-            Quality designs made custom, on demand, just for you
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam.
-          </p>
-        </section>
-        <aside class="sidebar">
-          <h2 class="sidebar-title">Cheap</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
-
-          <h2 class="sidebar-title">Quick</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
-
-          <h2 class="sidebar-title">Quality</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
-          </p>
-        </aside>
+      <section class="section-3">
+        <div class="container row">
+          <div class="section-3-left">
+            <h3 class="accent">It doesn't have to be so hard</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              molestiae provident tempore architecto labore quam id ab
+              voluptatum, minima rem reprehenderit incidunt autem iste expedita
+              doloribus? Quos itaque quas ex?
+            </p>
+            <img src="./the-image.jpg" alt="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
+              inventore. Expedita at reprehenderit, repellendus accusantium
+              aliquid velit voluptatum ea dolor! Aspernatur quo sit in
+              asperiores quae debitis perspiciatis inventore tempora?
+            </p>
+          </div>
+          <aside class="aside">
+            <div class="card">
+              <h3>Break it down</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+                quisquam optio eveniet magnam minima odit, maiores numquam
+                corporis! Natus distinctio ipsam perspiciatis porro? Sed
+                cupiditate odio tempora? Odio, nobis architecto.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Work your way up</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+                quisquam optio eveniet magnam minima odit, maiores numquam
+                corporis! Natus distinctio ipsam perspiciatis porro? Sed
+                cupiditate odio tempora? Odio, nobis architecto.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Break it down</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
+                quisquam optio eveniet magnam minima odit, maiores numquam
+                corporis! Natus distinctio ipsam perspiciatis porro? Sed
+                cupiditate odio tempora? Odio, nobis architecto.
+              </p>
+            </div>
+          </aside>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
         <h2>just scratching the surface</h2>
-        <div class="footer-container d-flex">
-          <div class="footer-text">
-            <h3>About our company</h3>
+        <div class="row-footer">
+          <div class="col">
+            <h4 class="accent">About our company</h4>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
-              id corporis facilis, dicta a culpa excepturi quae molestiae ex
-              quam voluptates cum, nostrum reprehenderit maxime, tempora
-              praesentium dolor ullam adipisci!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              provident itaque ab, illum eius consequatur eos ut laudantium
+              debitis et. Enim officia mollitia placeat at maxime, voluptates
+              laboriosam veritatis et!
             </p>
           </div>
-          <ul>
-            <h3>Getting around</h3>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-          <ul>
-            <h3>Other things</h3>
-            <li>Lorem ipsum</li>
-            <li>dolor</li>
-            <li>sit amet</li>
-            <li>consectetur</li>
-          </ul>
-          <ul>
-            <h3>And more</h3>
-            <li>Lorem ipsum</li>
-            <li>dolor</li>
-            <li>sit amet</li>
-            <li>consectetur</li>
-          </ul>
+          <div class="col">
+            <h4 class="accent">Getting around</h4>
+            <ul>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Home</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">About</a>
+              </li>
+              <li class="footer-nav__item" class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="accent">Other things</h4>
+            <ul>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Home</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">About</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contact</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="accent">And more</h4>
+            <ul>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Home</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">About</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contact</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
